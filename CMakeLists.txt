@@ -38,9 +38,9 @@ set(CMAKE_CXX_STANDARD 17)
 #add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
 add_definitions(-DUSE_HAL_DRIVER -DSTM32WB55xx)
 
-file(GLOB_RECURSE SOURCES "startup/*.*" "Drivers/*.*" "Src/*.*")
+file(GLOB_RECURSE SOURCES "Utilities/*.*" "Middlewares/*.*" "startup/*.*" "Drivers/*.*" "Src/*.*")
 
-set(DRIVER_INCLUDES Inc Drivers/STM32WBxx_HAL_Driver/Inc Drivers/STM32WBxx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32WBxx/Include Drivers/CMSIS/Include)
+set(DRIVER_INCLUDES Inc Drivers/STM32WBxx_HAL_Driver/Inc Drivers/STM32WBxx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32WBxx/Include Drivers/CMSIS/Include Utilities/lpm/tiny_lpm tiny_lpm Middlewares/ST/STM32_WPAN Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci Middlewares/ST/STM32_WPAN/utilities Middlewares/ST/STM32_WPAN/ble/core Middlewares/ST/STM32_WPAN/ble/core/auto Middlewares/ST/STM32_WPAN/ble/core/template Middlewares/ST/STM32_WPAN/ble/svc/Inc Middlewares/ST/STM32_WPAN/ble/svc/Src Utilities/sequencer Middlewares/ST/STM32_WPAN/ble Drivers/CMSIS/Include Drivers/CMSIS/Include Drivers/CMSIS/Include)
 list(REMOVE_ITEM DRIVER_INCLUDES Inc)
 
 include_directories(SYSTEM ${DRIVER_INCLUDES})

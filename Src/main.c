@@ -20,6 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "app_entry.h"
+#include "app_common.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -41,6 +43,9 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+
+RTC_HandleTypeDef hrtc;
+
 UART_HandleTypeDef huart1;
 
 PCD_HandleTypeDef hpcd_USB_FS;
@@ -54,6 +59,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USB_PCD_Init(void);
+static void MX_RF_Init(void);
+static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -93,10 +100,14 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
+  MX_RF_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
   setup();
   /* USER CODE END 2 */
 
+  /* Init code for STM32_WPAN */
+  APPE_Init();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 #pragma clang diagnostic push
@@ -169,7 +180,8 @@ void SystemClock_Config(void)
   }
   /** Initializes the peripherals clocks 
   */
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_SMPS|RCC_PERIPHCLK_USART1
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_SMPS|RCC_PERIPHCLK_RFWAKEUP
+                              |RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_USART1
                               |RCC_PERIPHCLK_USB;
   PeriphClkInitStruct.PLLSAI1.PLLN = 24;
   PeriphClkInitStruct.PLLSAI1.PLLP = RCC_PLLP_DIV2;
@@ -178,8 +190,10 @@ void SystemClock_Config(void)
   PeriphClkInitStruct.PLLSAI1.PLLSAI1ClockOut = RCC_PLLSAI1_USBCLK;
   PeriphClkInitStruct.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
   PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_PLLSAI1;
-  PeriphClkInitStruct.SmpsClockSelection = RCC_SMPSCLKSOURCE_HSI;
-  PeriphClkInitStruct.SmpsDivSelection = RCC_SMPSCLKDIV_RANGE0;
+  PeriphClkInitStruct.RTCClockSelection = RCC_RTCCLKSOURCE_LSE;
+  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_LSE;
+  PeriphClkInitStruct.SmpsClockSelection = RCC_SMPSCLKSOURCE_HSE;
+  PeriphClkInitStruct.SmpsDivSelection = RCC_SMPSCLKDIV_RANGE1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -190,6 +204,62 @@ void SystemClock_Config(void)
   /** Enable MSI Auto calibration 
   */
   HAL_RCCEx_EnableMSIPLLMode();
+}
+
+/**
+  * @brief RF Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_RF_Init(void)
+{
+
+  /* USER CODE BEGIN RF_Init 0 */
+
+  /* USER CODE END RF_Init 0 */
+
+  /* USER CODE BEGIN RF_Init 1 */
+
+  /* USER CODE END RF_Init 1 */
+  /* USER CODE BEGIN RF_Init 2 */
+
+  /* USER CODE END RF_Init 2 */
+
+}
+
+/**
+  * @brief RTC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_RTC_Init(void)
+{
+
+  /* USER CODE BEGIN RTC_Init 0 */
+
+  /* USER CODE END RTC_Init 0 */
+
+  /* USER CODE BEGIN RTC_Init 1 */
+
+  /* USER CODE END RTC_Init 1 */
+  /** Initialize RTC Only 
+  */
+  hrtc.Instance = RTC;
+  hrtc.Init.HourFormat = RTC_HOURFORMAT_24;
+  hrtc.Init.AsynchPrediv = CFG_RTC_ASYNCH_PRESCALER;
+  hrtc.Init.SynchPrediv = CFG_RTC_SYNCH_PRESCALER;
+  hrtc.Init.OutPut = RTC_OUTPUT_DISABLE;
+  hrtc.Init.OutPutPolarity = RTC_OUTPUT_POLARITY_HIGH;
+  hrtc.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
+  hrtc.Init.OutPutRemap = RTC_OUTPUT_REMAP_NONE;
+  if (HAL_RTC_Init(&hrtc) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN RTC_Init 2 */
+
+  /* USER CODE END RTC_Init 2 */
+
 }
 
 /**

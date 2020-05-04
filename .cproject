@@ -79,7 +79,7 @@
                   <listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-                </option>
+                <listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm" /><listOptionValue builtIn="false" value="../tiny_lpm" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src" /><listOptionValue builtIn="false" value="../Utilities/sequencer" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /></option>
                 								
                 <option id="gnu.c.compiler.option.preprocessor.def.symbols.757137911" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
@@ -106,7 +106,7 @@
                   <listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-                </option>
+                <listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm" /><listOptionValue builtIn="false" value="../tiny_lpm" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src" /><listOptionValue builtIn="false" value="../Utilities/sequencer" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /></option>
                 								
                 <option id="gnu.cpp.compiler.option.preprocessor.def.523157679" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
@@ -184,7 +184,7 @@
             					
           </folderInfo>
           					
-          <sourceEntries>
+          <sourceEntries><entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities" /><entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src" />
@@ -276,7 +276,7 @@
                   <listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-                </option>
+                <listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm" /><listOptionValue builtIn="false" value="../tiny_lpm" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src" /><listOptionValue builtIn="false" value="../Utilities/sequencer" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /></option>
                 								
                 <option id="gnu.c.compiler.option.preprocessor.def.symbols.757137911" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
@@ -303,7 +303,7 @@
                   <listOptionValue builtIn="false" value="../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32WBxx/Include" />
                   <listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" />
-                </option>
+                <listOptionValue builtIn="false" value="../Utilities/lpm/tiny_lpm" /><listOptionValue builtIn="false" value="../tiny_lpm" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/tl" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/interface/patterns/ble_thread/shci" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/utilities" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/auto" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/core/template" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Inc" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble/svc/Src" /><listOptionValue builtIn="false" value="../Utilities/sequencer" /><listOptionValue builtIn="false" value="../Middlewares/ST/STM32_WPAN/ble" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /><listOptionValue builtIn="false" value="../Drivers/CMSIS/Include" /></option>
                 								
                 <option id="gnu.cpp.compiler.option.preprocessor.def.symbols.383197607" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
@@ -381,7 +381,7 @@
             					
           </folderInfo>
           					
-          <sourceEntries>
+          <sourceEntries><entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities" /><entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers" />
             <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Src" />
@@ -423,7 +423,7 @@
     		
     <configuration artifactName="${ProjName}" configurationName="Debug">
       			
-      <resource resourceType="PROJECT" workspacePath="wb55-ble"/>
+      <resource resourceType="PROJECT" workspacePath="wb55-ble" />
       		
     </configuration>
     	
